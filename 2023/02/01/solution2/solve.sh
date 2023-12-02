@@ -1,2 +1,2 @@
-cat in.ed | ed input > in.dc
+cat in.ed | ed -s input > in.dc
 dc -f in.dc
