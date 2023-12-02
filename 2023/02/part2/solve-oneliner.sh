@@ -1,0 +1,1 @@
+sed 's/[,:;]//g;s/Game [0-9]*//;s/^/0sr 0sg 0sb/;s/red/sr/;s/blue/sb/;s/green/sg/;s/[0-9]* red/[&]x/g;s/[0-9]* green/[&]x/g;s/[0-9]* blue/[&]x/g;s/red/d lr<R sx/g;s/green/d lg<G sx/g;s/blue/d lb<B sx/g;s/$/ lr lg lb * * ln + sn/;1s/^/[srq]sR [sgq]sG [sbq]sB 0sn/;$s/$/ln p/' input | dc -f -
