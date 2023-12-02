@@ -1,6 +1,0 @@
-cat input| cut -d':' -f1 | sed 's/Game //g' > gamenums
-cat edred | ed input | dc > outred
-cat edblue | ed input | dc > outblue
-cat edgreen | ed input | dc > outgreen
-paste -d'\0' gamenums outred outblue outgreen > out
-sed '/\*\*\*/!d;s/[^0-9]//g;s/$/+/' out | xargs | dc -e '0 ? p'
