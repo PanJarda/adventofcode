@@ -1,10 +1,9 @@
-g/./s/[,;]//g\
+g/./s/[,;:]//g\
 s/red/lr<q/g\
 s/green/lg<q/g\
 s/blue/lb<q/g
 ,s/^/[/
 ,s/Game [0-9]*/& si/
-,s/://
 ,s/Game //
 ,s/$/ li ln + sn]x /
 1i
